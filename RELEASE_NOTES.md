@@ -14,7 +14,9 @@ Breaking changes can still occur in minor versions and patches, though, if the a
 
 This version fixes the iOS 15 autorotate bug and adds a property that can suppress the `needsInputModeSwitchKey` warning.
 
-`IMPORTANT` Override `viewWillSetupKeyboard` to automatically setup the keyboard at correct times. 
+Override `viewWillSetupKeyboard` to automatically setup the keyboard at correct times.
+
+`NOTE` This new bug fix is slow on older devices. Consider it a temporary fix that solves a currently critical problem, and let's aim to improve performance later.  
 
 ### ✨ New features
 
