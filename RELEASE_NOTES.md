@@ -22,6 +22,8 @@ Override `viewWillSetupKeyboard` to automatically setup the keyboard at correct 
 
 * `KeyboardInputViewController` has a new `viewWillSetupKeyboard` that can be overridden to setup the keyboard.
 * `KeyboardInputViewController` has a new `viewWillSyncWithScreenSize` that can be overridden to handle screen size changes.
+* `KeyboardInputViewController` has a new `needsInputModeSwitchKeyOverride` that can be set to make an input controllers ignore the real value.
+* `KeyboardInputViewController` has a new, static `needsInputModeSwitchKeyOverride` that can be set to make all input controllers ignore the real value.
 
 ### 🗑 Deprecations
 
