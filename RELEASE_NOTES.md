@@ -14,6 +14,13 @@ Breaking changes can still occur in minor versions and patches, though, if the a
 
 This version fixes the iOS 15 autorotate bug and adds a property that can suppress the `needsInputModeSwitchKey` warning.
 
+`IMPORTANT` Override `viewWillSetupKeyboard` to automatically setup the keyboard at correct times. 
+
+### ✨ New features
+
+* `KeyboardInputViewController` has a new `viewWillSetupKeyboard` that can be overridden to setup the keyboard.
+* `KeyboardInputViewController` has a new `viewWillSyncWithScreenSize` that can be overridden to handle screen size changes.
+
 ### 🗑 Deprecations
 
 * `KeyboardInputViewController` `setup(with:)` stack view variant is deprecated and will be removed in 5.0.
